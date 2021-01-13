@@ -32,38 +32,11 @@ export default function HomeScreen({navigation}) {
       <Button title="Profile" onPress={() => {
         navigation.navigate("Profile", {title:"Settings screen" });
       }}/> 
-      <Button title="Go to Settings" onPress={() => {
+      <Button title="App Settings" onPress={() => {
         navigation.navigate("Settings", {title:"Settings screen" });
       }}/>
     </View>
   );
 }
-
-
-/*
-export default function AppButton ({ onPress, title }) {
-  return (
-    <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
-      <Text style={styles.appButtonText}>Settings</Text>
-    </TouchableOpacity>,
-    <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
-      <Text style={styles.appButtonText}>Walk</Text>
-    </TouchableOpacity>,
-    <TouchableOpacity onPress={onPress} style={styles.appButtonContainer}>
-      <Text style={styles.appButtonText}>Settings</Text>
-    </TouchableOpacity>
-  );
-}
-*/
-
-
-
-
-//      <Box name = "#1"  color="#f00"/>
-//      <Box name = "#2"  color="#0f0"/>
-//      <Box name = "#3"  color="#00f"/>
-
-
-
 
 

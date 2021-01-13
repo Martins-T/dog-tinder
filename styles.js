@@ -4,7 +4,7 @@ export default StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    backgroundColor: '#3d95c4',
+    backgroundColor: '#13535c',
     padding: 8,
     alignItems: 'center',
     ...Platform.select({
@@ -16,8 +16,8 @@ export default StyleSheet.create({
     justifyContent: 'center', 
     alignItems: 'center',
     width: 220,
-    height: 70,
-    backgroundColor: '#c91a1a',
+    height: 55,
+    backgroundColor: '#a61717',
     marginBottom: 80,
     marginTop: 8,
   },
@@ -40,5 +40,10 @@ export default StyleSheet.create({
     fontWeight: "bold",
     alignSelf: "center",
     textTransform: "uppercase"
+  },
+  image: {
+    height: 170,
+    width: 220,
   }
+  
 });

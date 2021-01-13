@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { Text, View, StyleSheet, Button } from 'react-native';
-import {useState} from 'react';
+import { Text, View, StyleSheet, Button, Alert, TouchableOpacity, Image} from 'react-native';
+import styles from '../styles';
+import { Card } from 'react-native-paper';
 
 
 export default function SettingsScreen({navigation}) {
 
 
-  const[counter, setCounter] = useState(0);
 
   return (
-    <View>
+    <View style={styles.container}>
 
     <Button title="Go to Home" onPress={() => {
       navigation.navigate("Home", {title:"Home screen" });
