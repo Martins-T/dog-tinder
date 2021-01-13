@@ -1,35 +1,44 @@
-import { Platform, StatusBar, StyleSheet } from "react-native";
+import { Platform, StatusBar, StyleSheet } from "react-native"; 
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: 'column',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
+    backgroundColor: '#3d95c4',
+    padding: 8,
     alignItems: 'center',
     ...Platform.select({
-      ios: { paddingTop: 20 },
-      android: { paddingTop: StatusBar.currentHeight } })
-  },
+      ios: { paddingTop: 20 }, 
+      android:{paddingTop:StatusBar.currentHeight} 
+    })
+  }, 
   box: {
-    justifyContent: 'center',
+    justifyContent: 'center', 
     alignItems: 'center',
-    width: 100,
-    height: 100,
-    backgroundColor: '#ccc',
-    marginTop:10
-  },
-  circle: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: 100,
-    height: 100,
-    backgroundColor: '#ccc',
-    marginTop:10,
-    borderRadius: 55,
+    width: 220,
+    height: 70,
+    backgroundColor: '#c91a1a',
+    marginBottom: 80,
+    marginTop: 8,
   },
   paragraph: {
-    margin: 24,
-    fontSize: 18,
+    margin: 24, 
+    fontSize: 25,
     textAlign: 'center',
-    },
-  });
+    color: '#ffffff'
+  },
+  appButtonContainer: {
+    elevation: 8,
+    backgroundColor: "#009688",
+    borderRadius: 10,
+    paddingVertical: 10,
+    paddingHorizontal: 12
+  },
+  appButtonText: {
+    fontSize: 18,
+    color: "#000",
+    fontWeight: "bold",
+    alignSelf: "center",
+    textTransform: "uppercase"
+  }
+});
