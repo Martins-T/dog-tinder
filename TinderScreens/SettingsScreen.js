@@ -4,6 +4,18 @@ import styles from '../styles';
 import { Card } from 'react-native-paper';
 
 
+function Box({name, color}) {
+  return (
+    <View style={styles.box}>
+      <View style={{backgroundColor: color}}>
+        <Text style={styles.paragraph}>
+          {name}
+        </Text>
+      </View>
+    </View>
+  )
+}
+
 export default function SettingsScreen({navigation}) {
 
 
@@ -15,7 +27,13 @@ export default function SettingsScreen({navigation}) {
       navigation.navigate("Home", {title:"Home screen" });
     }}/> 
 
-    <Text>Settings </Text>
+    <Box name = "APP SETTINGS"/>
+
+    <Image style={{
+      height: 291,
+      width: 230,
+    }} source={require('../assets/settings.png')} />
+
 
     </View>
   );

@@ -11,39 +11,30 @@ export default StyleSheet.create({
       ios: { paddingTop: 20 }, 
       android:{paddingTop:StatusBar.currentHeight} 
     })
-  }, 
+  },
+  image: {
+    width: 230,
+    height: 130,
+  },
   box: {
     justifyContent: 'center', 
     alignItems: 'center',
-    width: 220,
+    width: 260,
     height: 55,
     backgroundColor: '#a61717',
     marginBottom: 80,
     marginTop: 8,
   },
   paragraph: {
-    margin: 24, 
+    margin: 12, 
     fontSize: 25,
     textAlign: 'center',
     color: '#ffffff'
   },
-  appButtonContainer: {
-    elevation: 8,
-    backgroundColor: "#009688",
-    borderRadius: 10,
-    paddingVertical: 10,
-    paddingHorizontal: 12
+  text: {
+    margin: 5, 
+    fontSize: 16,
+    textAlign: 'center',
+    color: '#ffffff'
   },
-  appButtonText: {
-    fontSize: 18,
-    color: "#000",
-    fontWeight: "bold",
-    alignSelf: "center",
-    textTransform: "uppercase"
-  },
-  image: {
-    height: 170,
-    width: 220,
-  }
-  
 });

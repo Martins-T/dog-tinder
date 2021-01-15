@@ -9,14 +9,14 @@ function Box({name, color}) {
     <View style={styles.box}>
       <View style={{backgroundColor: color}}>
         <Text style={styles.paragraph}>
-          Profile
+          {name}
         </Text>
       </View>
     </View>
   )
 }
 
-export default function ProfileScreen({navigation}) {
+export default function SniffScreen({navigation}) {
 
   return (
     <View style={styles.container}>
@@ -25,18 +25,17 @@ export default function ProfileScreen({navigation}) {
       navigation.navigate("Home", {title:"Home screen" });
     }}/> 
 
+    <Box name = "SNIFF AROUND"/>
 
+    <Image style={{
+      height: 281,
+      width: 230,
+    }} source={require('../assets/sniff.png')} />
 
-    <Box name = "PROFILE"/>
+    <Text style={styles.paragraph}>Rocky</Text>
+    <Text style={styles.text}>I like long, long walks and chasing my tail</Text>
 
-    <Image style={styles.image} source={require('../assets/suns.png')} />
-
-    <Text>Lorem ipsum </Text>
 
     </View>
-
-    
-
   );
 }
-
